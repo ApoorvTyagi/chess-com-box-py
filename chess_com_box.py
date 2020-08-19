@@ -87,14 +87,12 @@ def main():
     bullet_line = get_rating_line(LIVE_URL_FORMAT, "🚅", "Bullet", chess_com_user_name)
     rapid_line = get_rating_line(LIVE_URL_FORMAT, "⏲️", "Rapid", chess_com_user_name)
     puzzles_line = get_rating_line(PUZZLES_URL_FORMAT, "🧩", "Puzzles", chess_com_user_name)
-    daily_line = get_rating_line(DAILY_URL_FORMAT, "☀️", "Daily", chess_com_user_name)
 
     lines = [
         get_adjusted_line(blitz_line, 52),
         get_adjusted_line(bullet_line, 52),
         get_adjusted_line(rapid_line, 53),
         get_adjusted_line(puzzles_line, 52),
-        get_adjusted_line(daily_line, 53)
     ]
     content = "\n".join(lines)
     update_gist(GIST_TITLE, content)
