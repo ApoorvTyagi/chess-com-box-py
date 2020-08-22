@@ -11,7 +11,7 @@ import requests
 from github import Github
 
 WIDTH_JUSTIFICATION_SEPARATOR = "."
-GIST_TITLE = "♟︎ Chess.com Ratings"
+GIST_TITLE = "My Chess♟︎ Ratings"
 
 ENV_VAR_GIST_ID = "GIST_ID"
 ENV_VAR_GITHUB_TOKEN = "GH_TOKEN"
