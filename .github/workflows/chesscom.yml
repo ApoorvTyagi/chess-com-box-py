@@ -2,7 +2,7 @@ name: Update gist with Chess.com Ratings
 on:
   workflow_dispatch:
   schedule:
-    - cron: '59 00 * * *'
+    - cron: '00 01 * * *'
 jobs:
   update-gist:
     runs-on: ubuntu-latest
